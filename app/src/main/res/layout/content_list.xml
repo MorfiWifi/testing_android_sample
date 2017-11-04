@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="68dp"
+    android:background="@color/mode_background_when_selected"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mode_background_when_selected"
+
+        android:isScrollContainer="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.atahani.retrofit_sample.ui.ListActivity"
+        tools:showIn="@layout/activity_list">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/mode_background_when_selected"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/imageCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:onClick="OnClickCall"
+                    android:src="@mipmap/ic_call"
+                    app:srcCompat="@mipmap/ic_call" />
+
+                <TextView
+                    android:id="@+id/textViewcall"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:clickable="false"
+                    android:gravity="center_vertical|center"
+                    android:onClick="OnClickCall"
+                    android:paddingBottom="2dp"
+                    android:text="تماس های ورودی"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:src="@mipmap/ic_contract"
+                    app:srcCompat="@mipmap/ic_contract"
+                    tools:src="@mipmap/ic_contract" />
+
+                <TextView
+                    android:id="@+id/textViewcontract"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="2dp"
+                    android:text="قرارداد ها"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/imageorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:src="@mipmap/ic_order"
+                    app:srcCompat="@mipmap/ic_order"
+                    tools:src="@mipmap/ic_order" />
+
+                <TextView
+                    android:id="@+id/textVieworder"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="2dp"
+                    android:text="سفارشات"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/imageuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:src="@mipmap/ic_user"
+                    app:srcCompat="@mipmap/ic_user" />
+
+                <TextView
+                    android:id="@+id/textViewuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="2dp"
+                    android:text="مدیریت کاربران"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.5"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/imageButtoncustumer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:src="@mipmap/ic_customer"
+                    app:srcCompat="@mipmap/ic_customer" />
+
+                <TextView
+                    android:id="@+id/textViewcostumer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="مشتریان"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/imagemanufacture"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:src="@mipmap/ic_manufacture"
+                    app:srcCompat="@mipmap/ic_manufacture" />
+
+                <TextView
+                    android:id="@+id/textViewmanufacture"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="2dp"
+                    android:text="تولید کنندگان"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:onClick="OnClickCall"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="2dp"
+                tools:background="@android:color/background_light"
+                tools:onClick="onclickcall">
+
+                <ImageButton
+                    android:id="@+id/imagegood"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/background_light"
+                    android:src="@mipmap/ic_good"
+                    app:srcCompat="@mipmap/ic_good"
+                    tools:src="@mipmap/ic_good" />
+
+                <TextView
+                    android:id="@+id/textViewgood"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="2dp"
+                    android:text="کالاها"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

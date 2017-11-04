@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">کسرا</string>
+    <string name="pref_access_token" translatable="false">pref_access_token</string>
+    <string name="pref_expire_in_sec" translatable="false">pref_expire_in_sec</string>
+    <string name="pref_expire_at" translatable="false">pref_expire_at</string>
+    <string name="pref_refresh_token" translatable="false">pref_refresh_token</string>
+    <string name="pref_app_id" translatable="false">pref_app_id</string>
+    <string name="pref_user_id" translatable="false">pref_user_id</string>
+    <string name="pref_user_email" translatable="false">pref_user_email</string>
+    <string name="pref_user_name" translatable="false">pref_user_name</string>
+    <string name="pref_user_image_url">pref_user_image_url</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_list">" "</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
